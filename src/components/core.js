@@ -45,7 +45,7 @@
 			return name.toLowerCase();
 		}
 		var postfix = name.substr(index).toLowerCase();
-		return "-" + prefix + "-" + postfix;
+		return (prefix!=="")?"-" + prefix + "-" + postfix:postfix;
 	}
 	function addComma( attribute ) {
 		if(!attribute) {
